@@ -10,7 +10,7 @@ builds:
       - arm64
 
 kos:
-  - repository: ghcr.io/{{ .Env.GITHUB_REPOSITORY }}
+  - repository: ghcr.io/{{ .Env.GITHUB_REPOSITORY_OWNER }}/{{ .Env.GITHUB_REPOSITORY_NAME }}
     build: foxess-exporter
     tags:
       - "{{ .Tag }}"
