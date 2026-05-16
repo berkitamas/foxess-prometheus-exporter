@@ -1,0 +1,12 @@
+# Go
+/foxess-exporter
+/vendor/
+
+# IDE
+.idea/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
