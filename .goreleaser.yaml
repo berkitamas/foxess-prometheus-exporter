@@ -11,6 +11,9 @@ builds:
 
 kos:
   - build: foxess-prometheus-exporter
+    platforms:
+      - linux/amd64
+      - linux/arm64
     repositories:
       - ghcr.io/berkitamas/foxess-prometheus-exporter
     bare: true
