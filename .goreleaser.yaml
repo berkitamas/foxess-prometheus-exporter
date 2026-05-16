@@ -12,12 +12,13 @@ builds:
 kos:
   - build: foxess-prometheus-exporter
     repositories:
-      - ghcr.io/{{ .Owner }}/{{ .Name }}
+      - ghcr.io/berkitamas/foxess-prometheus-exporter
+    bare: true
     tags:
       - "{{ .Tag }}"
       - latest
 
 release:
   github:
-    owner: "{{ .Env.GITHUB_REPOSITORY_OWNER }}"
-    name: "{{ .Env.GITHUB_REPOSITORY_NAME }}"
+    owner: berkitamas
+    name: foxess-prometheus-exporter
