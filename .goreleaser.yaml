@@ -11,6 +11,7 @@ builds:
 
 kos:
   - repository: ghcr.io/{{ .Env.GITHUB_REPOSITORY }}
+    build: foxess-exporter
     tags:
       - "{{ .Tag }}"
       - latest
