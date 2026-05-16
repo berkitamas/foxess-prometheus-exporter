@@ -9,9 +9,10 @@ builds:
       - amd64
       - arm64
 
-ko:
-  - repository: ghcr.io/{{ .Owner }}/{{ .Name }}
-    build: foxess-prometheus-exporter
+kos:
+  - build: foxess-prometheus-exporter
+    repositories:
+      - ghcr.io/{{ .Owner }}/{{ .Name }}
     tags:
       - "{{ .Tag }}"
       - latest
