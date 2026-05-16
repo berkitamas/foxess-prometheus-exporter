@@ -1,4 +1,4 @@
-module github.com/taberki/foxess-exporter
+module github.com/berkitamas/foxess-prometheus-exporter
 
 go 1.26.3
 

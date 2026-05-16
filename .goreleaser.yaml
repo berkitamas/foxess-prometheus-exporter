@@ -1,17 +1,17 @@
 version: 2
 
 builds:
-  - id: foxess-exporter
-    binary: foxess-exporter
+  - id: foxess-prometheus-exporter
+    binary: foxess-prometheus-exporter
     goos:
       - linux
     goarch:
       - amd64
       - arm64
 
-kos:
-  - repository: ghcr.io/{{ .Env.GITHUB_REPOSITORY_OWNER }}/{{ .Env.GITHUB_REPOSITORY_NAME }}
-    build: foxess-exporter
+ko:
+  - repository: ghcr.io/{{ .Owner }}/{{ .Name }}
+    build: foxess-prometheus-exporter
     tags:
       - "{{ .Tag }}"
       - latest

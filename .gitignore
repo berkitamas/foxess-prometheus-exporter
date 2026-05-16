@@ -1,5 +1,5 @@
 # Go
-/foxess-exporter
+/foxess-prometheus-exporter
 /vendor/
 
 # IDE
@@ -10,3 +10,4 @@
 
 # Logs
 *.log
+dist/

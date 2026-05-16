@@ -13,7 +13,7 @@ export FOXESS_API_KEY=your-api-key-here
 ## Running
 
 ```bash
-./foxess-exporter
+./foxess-prometheus-exporter
 ```
 
 The metrics will be available at `http://localhost:8080/metrics`.

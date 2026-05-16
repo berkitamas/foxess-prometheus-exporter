@@ -6,9 +6,9 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/berkitamas/foxess-prometheus-exporter/foxess"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/taberki/foxess-exporter/foxess"
 )
 
 type FoxESSCollector struct {
