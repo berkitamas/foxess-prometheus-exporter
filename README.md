@@ -20,9 +20,9 @@ The metrics will be available at `http://localhost:8080/metrics`.
 
 ## Docker
 
-Build and run with Docker:
+You can build and run the Docker image using `ko`:
 
 ```bash
-docker build -t foxess-exporter .
-docker run -e FOXESS_API_KEY=your-api-key-here -p 8080:8080 foxess-exporter
+# Build and run
+ko build .
 ```
